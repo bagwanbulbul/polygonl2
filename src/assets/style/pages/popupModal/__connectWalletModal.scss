@@ -1,0 +1,63 @@
+// .connectWallet .modal-dialog .modal-content{
+//     height: 500px;
+//     overflow-y: scroll;
+// }
+.modal-header.connectWallet_modal_header{
+    border-bottom: none !important;
+    padding: 1rem 1rem 0rem 1rem;
+
+    .modal-close {
+        height: 30px;
+        width: 30px;
+        cursor: pointer;
+        font-size: 30px;
+        color: hsl(230deg, 88%, 59%);
+    }
+}
+.modal-body.connectWallet_modal_body{
+    padding: 0rem;
+    .metamask_div{
+        border-bottom: 2px solid rgb(250 246 246);
+        border-right: 2px solid rgb(250 246 246);
+    }
+    .walletconnent_div{
+        border-bottom: 2px solid rgb(250 246 246);
+    }
+    .coinbase_div{
+        border-right: 2px solid rgb(250 246 246);
+    }
+    .bear_game_connectWallet_metamask{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        padding: 28px; 
+        margin: 10px 0px 10px 0px;
+         &:hover{
+            background: #f7f8f5;
+            margin: 10px 0px 10px 0px;
+            border-radius: 5px;
+         }
+        .metamsk_img{
+            img{
+                width: 45px;
+                height: 45px;
+            }
+        }
+        .head{
+            font-family: auto;
+            font-size: 24px;
+            font-weight: 700;
+            margin-top: 0.5em;
+            color: rgb(12, 12, 13);
+        }
+        .description{
+            font-family: auto;
+            font-size: 18px;
+            // margin: 0.333em 0px;
+            color: rgb(169, 169, 188);
+        }
+    }
+    
+}

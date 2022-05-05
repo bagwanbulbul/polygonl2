@@ -1,0 +1,223 @@
+.polygon_section {
+    background: #50504f;
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.8), rgba(0,0,0,0.8)),url('https://image.shutterstock.com/image-photo/white-clouds-isolated-cut-out-260nw-114010102.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    .polygon_bg {
+        background-image: url("../../images/background.svg");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        .polygon_icon {
+            img {
+                padding-top: 75px;
+                z-index: 1;
+                position: relative;
+
+                &:hover ~ .polygon_overlayText {
+                    display: block;
+                }
+            }
+            .polygon_overlayText {
+                display: none;
+                background: #141313d1;
+                width: 226px;
+                padding: 5px 1px 7px 10px;
+                position: absolute;
+                top: 80px;
+                left: 45%;
+                border-radius: 5px;
+                .polygon_head {
+                    font-size: 18px;
+                    color: #fff;
+                    font-weight: 600;
+                }
+                .polygon_text {
+                    font-size: 13px;
+                    color: #bcb9b9;
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+}
+
+.polygon_offCanvas {
+    border-radius: 10px;
+    background-color: black;
+    overflow-y: scroll;
+
+    .closeBtn {
+        font-size: 1.6rem;
+        color: #fff;
+    }
+    .polygon_image {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 200px;
+        }
+    }
+    .polygon_head {
+        font-family: minecraft;
+        font-size: 1.5em;
+        color: #fff;
+        letter-spacing: 5px;
+    }
+    .polygon_subhead {
+        color: #fff;
+        font-size: 20px;
+        padding: 30px 0px 15px 0px;
+    }
+    .polygon_text1 {
+        font-size: 1rem;
+        color: #a19f9f;
+    }
+    .polygon_text2 {
+        font-size: 1rem;
+        color: #a19f9f;
+        padding-top: 15px;
+    }
+    hr {
+        color: gray;
+        margin: 1rem 0rem;
+    }
+    .polygon_table {
+        table {
+            border-collapse: separate;
+            border-spacing: 0 15px;
+        }
+        thead {
+            font-size: 0.875rem;
+            color: #a19f9f;
+            font-weight: 400;
+            .ethereum {
+                text-align: center;
+            }
+            .polygon {
+                text-align: center;
+            }
+            .bridge {
+                text-align: right;
+            }
+        }
+        tbody {
+            tr {
+                background-color: #202230;
+                td {
+                    padding: 10px;
+                    &:first-child {
+                        border-radius: 10px 0 0 10px;
+                    }
+                    &:last-child {
+                        border-radius: 0 10px 10px 0;
+                    }
+                    .asset_col1 {
+                        display: flex;
+                        gap: 20px;
+                        border-right: 1px dashed #928e8e;
+
+                        .text {
+                            color: #fff;
+                            padding: 10px;
+                        }
+                    }
+                    .asset_col2 {
+                        display: flex;
+                        gap: 10px;
+                        border-right: 1px dashed #928e8e;
+
+                        .text {
+                            color: #fff;
+                            padding: 10px;
+                        }
+                    }
+                    .asset_col3 {
+                        display: flex;
+                        gap: 15px;
+                        border-right: 1px dashed #928e8e;
+
+                        .text {
+                            color: #fff;
+                            padding: 10px;
+                        }
+                        .shard_img {
+                            img {
+                                width: 40px;
+                            }
+                        }
+                    }
+                    .ethereum_col {
+                        display: flex;
+                        gap: 8px;
+                        justify-content: center;
+                        padding-top: 7px;
+                        border-right: 1px dashed #928e8e;
+                        height: 44px;
+                        .zero {
+                            color: #fff;
+                            padding: 2px;
+                        }
+                    }
+                    .polygon_col {
+                        display: flex;
+                        gap: 8px;
+                        justify-content: center;
+                        padding-top: 7px;
+                        border-right: 1px dashed #928e8e;
+                        height: 44px;
+                        .zero {
+                            color: #fff;
+                            padding: 2px;
+                        }
+                    }
+                    .bridge_col {
+                        .swap_img {
+                            text-align: right;
+                            svg {
+                                font-size: 2.6rem;
+                                color: gray;
+                                &:hover {
+                                    color: #00e361;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .polygon_bottom_text {
+        display: flex;
+        justify-content: space-between;
+        .automatic {
+            color: #ff00e5;
+            font-weight: 500;
+            font-size: 17px;
+        }
+        .manual {
+            color: #ff00e5;
+            font-weight: 500;
+            font-size: 17px;
+        }
+    }
+    .polygon_transaction_history {
+        font-size: 19px;
+        color: #fff;
+    }
+    .polygon_comingSoon {
+        color: #a19f9f;
+        padding-top: 10px;
+    }
+}
+.offcanvas-end {
+    width: 700px;
+}

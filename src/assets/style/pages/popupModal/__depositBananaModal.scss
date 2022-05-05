@@ -1,0 +1,132 @@
+.depositBanana .modal-dialog .modal-content {
+    background: #0b0514;
+    border-radius: 0rem;
+    border: 1px solid #25292e;
+}
+.modal-header.depositBanana_modal_header {
+    border-bottom: none !important;
+    padding: 1rem 1rem 0rem 1rem;
+    display: flex;
+    justify-content: flex-end;
+
+    .modal-close {
+        cursor: pointer;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+.modal-body.depositBanana_modal_body {
+    padding-top: 0rem;
+}
+
+.deposit_content {
+    .deposit_head {
+        font-family: minecraft;
+        font-size: 1.5em;
+        color: #fff;
+        letter-spacing: 3px;
+        text-align: center;
+    }
+    .deposit_text {
+        font-size: 14px;
+        color: #aca8a8;
+        text-align: center;
+        padding: 20px;
+    }
+    .deposit_from {
+        color: #fff;
+        font-size: 21px;
+    }
+    .deposit_mainnet {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 8px 0px 6px 0px;
+    }
+    .deposit_input_field{
+        box-sizing: border-box;
+        margin: 0px;
+        min-width: 0px;
+        -webkit-box-align: center;
+        align-items: center;
+        background-color: #202230;
+        border-radius: 8px;
+        padding: 1rem 1.5rem;
+        opacity: 1;
+        display: flex;
+        justify-content: space-between;
+
+         input{
+            font-size: 20px;
+            background: transparent;
+            border: none;
+            color: rgb(155, 154, 154);
+             &:focus{
+                 border: none;
+                 box-shadow: none;
+                 outline: none;
+             }
+         }
+
+         .deposit_max_div{
+             display: flex;
+             gap: 10px;
+               .max{
+                padding-top: 6px;
+               }
+         }
+    }
+    .available_balance{
+        display: flex;
+        justify-content: end;
+        font-size: 13px;
+        color: #aca8a8;
+        font-weight: 600;
+        padding-top: 8px;
+    }
+    .switch{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+         .switch_img{
+             svg{
+                color: #fff;
+                font-size: 2.6em;
+             }
+         }
+         .switch_text{
+            color: #fff;
+            font-size: 14px;
+            font-weight: 500;
+            padding-top: 5px;
+         }
+    }
+    .deposit_to {
+        color: #fff;
+        font-size: 21px;
+    }
+    .deposit_polygon {
+        color: #fff;
+        font-size: 13px;
+        font-weight: 500;
+        padding: 8px 0px 6px 0px;
+    }
+    .deposit_bridge{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+         .bridge_btn{
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            background-color: #16763f;
+            font-size: 14px;
+            font-weight: 500;
+         }
+    }
+    
+}
+

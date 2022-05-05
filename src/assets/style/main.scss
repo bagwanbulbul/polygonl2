@@ -1,0 +1,40 @@
+@import url('../style/pages/popupModal/__mintModal.scss');
+@import url('../style/pages/popupModal/__storyLineModal.scss');
+@import url('../style/pages/popupModal/__whitePaperModal.scss');
+@import url('../style/pages/popupModal/__huntersModal.scss');
+@import url('../style/pages/popupModal/__connectWalletModal.scss');
+@import url('../style/pages/popupModal/__depositBananaModal.scss');
+
+@import url('../style/common/__header.scss');
+
+@import url('../style/pages/__home.scss');
+@import url('../style/pages/__bear.scss');
+@import url('../style/pages/subComponent/__joinGame.scss');
+@import url('../style/pages/subComponent/__playGame.scss');
+
+@import url('../style/pages/__polygon.scss');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+@font-face {
+    font-family: salmons;
+    src: url('../font/Salmon.otf');
+}
+@font-face {
+    font-family: minecraft;
+    src: url('../font/Minecraft.ttf');
+}
+@font-face{
+    font-family: itim-regular;
+    src: url('../font/Itim-Regular.ttf');
+}
+@font-face{
+    font-family: arcadeclassic;
+    src: url('../font/ARCADECLASSIC.TTF');
+}
