@@ -6,6 +6,13 @@ import { MdSwapVerticalCircle } from 'react-icons/md'
 
 import Web3 from "web3";
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+// import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
+// import { Grid } from  'react-loader-spinner'
+
+
 
 const config = require("../../config.json")
 const WalletConnectProvider = require("@maticnetwork/walletconnect-provider");
@@ -126,26 +133,57 @@ function DepositBananaModal(props) {
       .approveERC20ForDeposit(config.posRootERC20, x1, {
         from: account,
       }).then((res) => {
-        setLoading(true);
-        console.log("approveERC20", res.transactionHash);
         setLoading(false);
-
+        toast.success('🦄 Transaction Aproved!', {
+          position: "top-center",
+          theme: "colored",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        console.log("approveERC20", res.transactionHash);
       });
-    
+
     setLoading(true);
     await maticPoSClient
       .depositERC20ForUser(config.posRootERC20, account, x1, {
         from: account,
       }).then((res) => {
         console.log("deposite", res.transactionHash);
-        setLoading(false);
-        window.location.reload()
+        // setLoading(false);
+        toast.success('🦄 Transaction Deposite!', {
+          position: "top-center",
+          theme: "colored",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+        });
+        setTimeout(() => {
+          window.location.reload()
+        }, 5000);
+        // window.location.reload()
       });
   };
 
   return (
     <>
-
+      <ToastContainer
+        position="bottom-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
 
 
 
@@ -159,7 +197,7 @@ function DepositBananaModal(props) {
               <Col lg={12}>
                 <div className="deposit_content">
                   <div className="deposit_head">Deposit</div>
-                 
+
                   <div className="deposit_text">Enter the amount you want to deposit from Mainnet to Polygon</div>
 
                   <div className="deposit_from">From</div>
@@ -185,12 +223,14 @@ function DepositBananaModal(props) {
 
                     {loading ?
                       <Spinner animation="border" variant="primary" />
+                      // <Grid color="#00BFFF" height={80} width={80} />
+
                       :
                       <h1></h1>
                     }
                   </div>
 
-                 
+
 
 
                   <div className="deposit_to">To</div>
