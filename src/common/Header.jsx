@@ -23,27 +23,26 @@ export default function Header() {
               var loginUserAdd = address[0];
               sessionStorage.setItem("loginUserAdd", loginUserAdd);
           });
-
           window.location.reload();
       }
   };
 
   useEffect(() => {
     if(window.ethereum) {
-        // window.ethereum.request({
-        //     method: "wallet_addEthereumChain",
-        //     params: [{
-        //         chainId: "0x61",
-        //         rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
-        //         chainName: "BNB Testnet",
-        //         nativeCurrency: {
-        //             name: "BNB",
-        //             symbol: "BNB",
-        //             decimals: 18
-        //         },
-        //         blockExplorerUrls: ["https://testnet.bscscan.com"]
-        //     }]
-        // });
+    //     window.ethereum.request({
+    //         method: "wallet_addEthereumChain",
+    //         params: [{
+    //             chainId: "0x61",
+    //             rpcUrls: ["https://data-seed-prebsc-1-s1.binance.org:8545/"],
+    //             chainName: "BNB Testnet",
+    //             nativeCurrency: {
+    //                 name: "BNB",
+    //                 symbol: "BNB",
+    //                 decimals: 18
+    //             },
+    //             blockExplorerUrls: ["https://testnet.bscscan.com"]
+    //         }]
+    //     });
         window.ethereum.request({
             method: "wallet_addEthereumChain",
             params: [{
@@ -73,6 +72,7 @@ export default function Header() {
         var loginUserAdd = address[0];
         sessionStorage.setItem("loginUserAdd", loginUserAdd);
         console.log("loginUserAddress1loginUserAddress1", loginUserAdd);
+        window.location.reload();
     }); 
   }
   useEffect(() => {
